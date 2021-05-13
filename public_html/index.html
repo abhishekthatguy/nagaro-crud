@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="primaryBackground">
+<!--    Loader-->
+    <div class="loader" id="loader">
+    <img src="img/bigrotation2.gif" class="loader"/>
+    </div>
+<!--    ended here -->
+<!--    confirm boxx-->
+    <div id="confirmOverlay">
+    <div id="confirmBox">
+
+        <h1>confirm </h1>
+        <p>Are you sure you want to change the status to DONE?</p>
+
+        <div id="confirmButtons">
+            <button class="btn" >Yes<span></span></button>
+            <button class="btn">No<span></span></button>
+        </div>
+    </div>
+</div>
+<main>
+    
+    <header class="bg-greyGradeint">
+    <div class="logo-holder"><img src="img/logo.png" alt="logo_here"/></div>
+        <div class="content primary-color">
+        <p class="mainName "><b>Incident Open Action Tracker </b></p>
+            <p class="ics"><i>ICS 233-CG </i></p>
+        </div>
+    </header>
+<!--    <section>-->
+    <section class="bg-greyGradeint bTnot">
+        <div class="head">
+            <div>
+        <h3>List of Actions</h3>
+        <span class="secondary-font">(Incident Location -10)</span>
+                </div>
+            <div>
+        
+        <span><b>Showing 1-4 of 4 Records</b></span>
+                </div>
+            <div>
+        
+        <span><select><option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option></select><b>Records Per Page</b></span>
+                </div>
+        </div>
+        <div class="divList">
+        <div class="actionListContainer">
+            <div class="dflex">
+            <h2><span class="srNo">1</span> Lorem Ipsum</h2>
+            <div class="iconContainer"><img src="img/edit.png" class="icon" alt="icon"/>
+            <img src="img/delete.png" class="icon deleteAction" alt="icon"/>
+            </div>
+            </div>
+            <div class="dflex actionDescription">
+            <p><label>For/POC : </label> Lorem Ipsum</p>
+            <p><label>POC Briefed : </label> Miles & More</p>
+            <p><label>Start Date : </label> 1/29/2010 6:30:00PM</p>
+            <p><label>Target  Date : </label> 1/29/2010 6:30:00PM</p>
+            <p><label>Actual Date : </label> 1/29/2010 6:30:00PM</p>
+
+            </div>
+            </div>
+            <div class="actionListContainer">
+            <div class="dflex">
+            <h2><span class="srNo">2</span> Lorem Ipsum</h2>
+            <div class="iconContainer"><img src="img/edit.png" class="icon" alt="icon"/>
+            <img src="img/delete.png" class="icon deleteAction" alt="icon"/>
+            </div>
+            </div>
+            <div class="dflex actionDescription">
+            <p><label>For/POC : </label> Lorem Ipsum</p>
+            <p><label>POC Briefed : </label> Miles & More</p>
+            <p><label>Start Date : </label> 1/29/2010 6:30:00PM</p>
+            <p><label>Target  Date : </label> 1/29/2010 6:30:00PM</p>
+            <p><label>Actual Date : </label> 1/29/2010 6:30:00PM</p>
+
+            </div>
+            </div>
+            <div class="actionListContainer">
+            <div class="dflex">
+            <h2><span class="srNo">3</span> Lorem Ipsum</h2>
+            <div class="iconContainer"><img src="img/edit.png" class="icon" alt="icon"/>
+            <img src="img/delete.png" class="icon deleteAction" alt="icon"/>
+            </div>
+            </div>
+            <div class="dflex actionDescription">
+            <p><label>For/POC : </label> Lorem Ipsum</p>
+            <p><label>POC Briefed : </label> Miles & More</p>
+            <p><label>Start Date : </label> 1/29/2010 6:30:00PM</p>
+            <p><label>Target  Date : </label> 1/29/2010 6:30:00PM</p>
+            <p><label>Actual Date : </label> 1/29/2010 6:30:00PM</p>
+
+            </div>
+            </div>
+            <div class="actionListContainer" id="conatiner4">
+            <div class="dflex">
+            <h2><span class="srNo">4</span> Lorem Ipsum</h2>
+            <div class="iconContainer"><img src="img/edit.png" class="icon" alt="icon"/>
+            <img src="img/delete.png" class="icon deleteAction" alt="icon"/>
+            </div>
+            </div>
+            <div class="dflex actionDescription">
+            <p><label>For/POC : </label> Lorem Ipsum</p>
+            <p><label>POC Briefed : </label> Miles & More</p>
+            <p><label>Start Date : </label> 1/29/2010 6:30:00PM</p>
+            <p><label>Target  Date : </label> 1/29/2010 6:30:00PM</p>
+            <p><label>Actual Date : </label> 1/29/2010 6:30:00PM</p>
+
+            </div>
+            </div>
+            </div>
+<!--        action list footer-->
+           <div class="footer dflex">
+            <div>
+      <ul class="pagination">
+          <li><b>Pages</b></li>
+          <li class="active">1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+                </ul>
+                </div>
+            <div>
+        
+        <span><b>Showing 1-4 of 4 Records</b></span>
+                </div>
+            <div>
+        
+        <span><select class="selectPage"><option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option></select>Records Per Page</span>
+                </div>
+        </div>
+        
+   
+    </section>
+        
+<!--    new action -->
+    <section class="bg-greyGradeint2" id="newActionArea">
+     <div class="head dflex newActionHead ">
+            <div>
+        <h3 class="green">New Actions</h3>
+       
+                </div>
+            <div>
+        
+        <button class="btn btn-grey">Insert New Line</button>
+        <button class="btn btn-grey">Reorder List</button>
+        <button class="btnHide" id="hideNewActionArea">Hide <img src="img/hide.png"/></button>
+                
+        
+                </div>
+        </div>
+    <div class="dflex newActionContainer">
+    <div class="formFields">
+        <div class="dflex formsHolder">
+        <div class="formGroup">
+        <label>Line No.:</label>
+            <div class="inputGroup">
+            <select class="formControl">
+                <option>At Last</option>
+                </select>
+            </div>
+        </div>
+        <div class="formGroup">
+        <label>For/POC:</label>
+            <div class="inputGroup">
+            <input type="text" class="formControl"/>
+            </div>
+        </div>
+         <div class="formGroup">
+        <label>Item :</label>
+            <div class="inputGroup" style="width: 10px;">
+            <input type="checkbox" check="true"  id="item" class="formControl" />
+            </div>
+        </div>
+        <div class="formGroup">
+        <label>POC Briefied:</label>
+            <div class="inputGroup">
+            <input type="text" class="formControl"/>
+            </div>
+        </div>
+            <div class="formGroup">
+        <label>Status:</label>
+            <div class="inputGroup">
+            <select class="formControl" id="selectStatus" name="selectStatus">
+                <option value="">----</option>
+                <option value="pending">Pending</option>
+                 <option value="wip">WIP</option>
+                <option value="done">DONE</option>
+                </select>
+            </div>
+        </div>
+        </div>
+        </div>
+<!--    Date Input Fields     -->
+              <div class="DateTimeFields">
+                  <div class="dateHolder">
+        <div class="formGroup">
+        <label>Start Date:</label>
+            <div class="inputGroup">
+            <input type="date" class="formControl">
+                <img src="img/calander.png"/>
+            </div>
+        
+        <label>Hr:</label>
+            <div class="inputGroup">
+            <select class="formControl"><option>18</option></select>
+            </div>
+       
+        <label>Min :</label>
+            <div class="inputGroup">
+            <select class="formControl"><option>18</option></select>
+            </div>
+        </div>
+      <div class="formGroup">
+        <label>Target Date:</label>
+            <div class="inputGroup">
+            <input type="date" class="formControl">
+                <img src="img/calander.png"/>
+            </div>
+    
+        <label>Hr:</label>
+            <div class="inputGroup">
+            <select class="formControl"><option>18</option></select>
+            </div>
+       
+        <label>Min :</label>
+            <div class="inputGroup">
+            <select class="formControl"><option>18</option></select>
+            </div>
+        </div>
+                  <div class="formGroup">
+        <label>Actual Date:</label>
+            <div class="inputGroup">
+            <input type="date" class="formControl">
+                <img src="img/calander.png"/>
+            </div>
+       
+        <label>Hr:</label>
+            <div class="inputGroup">
+            <select class="formControl"><option>18</option></select>
+            </div>
+       
+        <label>Min :</label>
+            <div class="inputGroup">
+            <select class="formControl"><option>18</option></select>
+            </div>
+        </div>
+        </div>
+    </div>
+        </div>
+        
+
+    
+    </section>
+    <section class="bg-transparent text-right">
+        <div class='btnholder'><button class="btn btn-grey" type="submit" data-target="thankyouPage.html" id="save">Save</button>
+        <button class="btn btn-grey" id="saveExit">Save & Exit</button>
+            <button class="btn btn-grey">Cancel</button>
+             <button class="btn btn-grey" id="showPannel">Show Action</button>
+        </div>
+    </section>
+    </main>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/script.js"></script>
+<!--
+    <script>
+    $("#save").click(function(){
+        debugger;
+        alert("hello");
+        $("#loader").show();
+//         var thankyoumessage='../../thanyouPage.html';
+//         location.href(thankyoumessage);
+         window.setTimeout(function(){
+
+        // Move to a new location or you can do something else
+        window.location.href = '/thankyouPage.html';
+
+    }, 100);
+    }
+    </script>
+-->
+</body>
+</html>

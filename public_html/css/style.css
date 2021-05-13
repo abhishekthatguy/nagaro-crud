@@ -1,0 +1,351 @@
+.primaryBackground {
+  background-image: url("../img/bg.png");
+  background-position:center;
+  background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+    color: #364346;
+        
+}
+.ThankyouPage{
+    text-align: center;
+    position: relative;
+}
+.ThankyouPage div{
+/*
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(50% ,50%);
+*/
+    
+}
+div.loader{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* display: flex; */
+    top: 50%;
+    left: 50%;
+    display: none;
+    /* transform: translate(10px, 10px); */
+    /* transform: translate(-50%, -50%); */
+}
+div.logo-holder{
+    width: 340px;
+    height: auto;
+}
+div.logo-holder img{
+    width:100%;
+    height:100%;
+}
+.
+#showPannel{
+    display: block;
+}
+#newActionArea{
+    display: none;
+}
+.text-right{
+    text-align: right;
+}
+.bg-greyGradeint{
+    background-image: linear-gradient(#fafafa, #d9dbdc);
+}
+.bg-greyGradeint2{
+    background-image: linear-gradient(#d9dbdc, #fafafa);
+}
+.bg-transparent{
+   background: transparent; 
+}
+
+.green{
+    color: #4c961d;
+}  
+.primary-color{
+    color: #364346;
+
+}
+.secondary-font{
+    color: #8a8a8a;
+    font-size: 18px;
+}
+main{
+    display: block;
+/*    background-color: white;*/
+    width: 100%;
+    height: 100%;
+}
+header{
+    width: 100%;
+    height: 92px;
+    background: #d8dadb;
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+    flex-wrap: wrap;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 0px 15px;
+    box-sizing: border-box;
+}
+header p{
+    line-height: 15px;
+    margin-bottom: 0px;
+}
+.ics{
+    font-size: 20px;
+    font-style: oblique;
+}
+.mainName {
+    font-size: 24px;
+    font-weight: 600;
+    font-style: italic;
+    font-family: sans-serif;
+}
+.head{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+.head h3{
+    display: inline-block;
+    color: #4c961d;
+    font-size: 30px;
+}
+.head span{
+/*
+    color:#ded9d9;
+    font-size: 10px;
+*/
+}
+.head select, .selectPage{
+    padding:5px 10px;
+    margin-right: 10px;
+}
+
+.content{
+        margin-right: 20px;
+}
+section{
+    padding:0px 30px;
+     background-color: white;
+    margin-bottom:10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.divList {
+    display: flex;
+    justify-content: flex-start;
+/*    height: 330px;*/
+    width: 100%; 
+    flex-wrap: wrap;
+}
+.divList h2{
+    display: inline-block;
+    color: #4c961d;
+    font-size: 22px;
+}
+.iconContainer img{
+    width:30px;
+}
+.actionListContainer {
+    width: 48%;
+    border: 1px solid #989898;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-right: 25px;
+    margin-bottom: 20px;
+    background: #f9f9f9;
+    box-sizing: border-box;
+    padding-bottom: 15px;
+}
+
+/*confirm box css styling*/
+
+#confirmOverlay{
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    background:url('ie.png');
+    background: -moz-linear-gradient(rgba(11,11,11,0.1), rgba(11,11,11,0.6)) repeat-x rgba(11,11,11,0.2);
+    background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(11,11,11,0.1)), to(rgba(11,11,11,0.6))) repeat-x rgba(11,11,11,0.2);
+    z-index:100000;
+    display:none;
+}
+
+#confirmBox{
+    background:#e5e5e5;
+    width:460px;
+    position:fixed;
+    left:50%;
+    top:50%;
+    margin:-130px 0 0 -230px;
+    border: 1px solid rgba(33, 33, 33, 0.6);
+
+    -moz-box-shadow: 0 0 2px rgba(255, 255, 255, 0.6) inset;
+    -webkit-box-shadow: 0 0 2px rgba(255, 255, 255, 0.6) inset;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.6) inset;
+}
+
+#confirmBox h1,
+#confirmBox p{
+    font:26px/1 'Cuprum','Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    background:url('header_bg.jpg') repeat-x left bottom #f5f5f5;
+    padding: 18px 25px;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.6);
+    color:#666;
+}
+
+#confirmBox h1{
+    letter-spacing:0.3px;
+    color:#888;
+}
+
+#confirmBox p{
+    background:none;
+    font-size:16px;
+    line-height:1.4;
+    padding-top: 35px;
+}
+
+#confirmButtons{
+    padding:15px 0 25px;
+    text-align:center;
+}
+
+#confirmBox .button{
+    display:inline-block;
+    background:url('buttons.png') no-repeat;
+    color:white;
+    position:relative;
+    height: 33px;
+
+    font:17px/33px 'Cuprum','Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+
+    margin-right: 15px;
+    padding: 0 35px 0 40px;
+    text-decoration:none;
+    border:none;
+}
+li.active{
+    border:1px solid black;
+    background:#4c9624;
+    color:white;
+    padding: 2px 5px;
+}
+
+
+
+
+/*ended here */
+
+/*flex css*/
+.dflex{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+.actionDescription{
+    margin: 0px 20px;
+}
+.actionDescription p
+{width: 50%;
+    line-height: 1;
+    margin-bottom: 0px;
+    font-size: 16px;
+}
+.actionDescription p label{
+    font-weight: bold;
+    display: inline-block;
+    font-size: 16px;
+    
+}
+.btnHolder{
+    width: 100%;
+    text-align: right;
+}
+.btn{
+   padding: 10px 15px;
+    border: 1px solid #7b7a7a;
+    border-radius: 5px;
+    margin: 5px 10px;
+    box-shadow: none;
+}
+.btnHide{
+    border: none;
+    background: transparent;
+    box-shadow: none;
+}
+.btn-grey {
+    color: white;
+    background-image: linear-gradient(#545454, #2b2b2b);
+}
+ul{
+    display: inline-block;
+}
+ul li{
+    display: inline-block;
+}
+.formFields{
+    width:60%;
+}
+.formGroup {
+    width: 45%;
+    display: flex;
+    margin: 10px 10px;
+}
+.formGroup label{
+   width: 30%;
+    text-align: left;
+    white-space: nowrap;
+    margin-right: 10px;
+}
+.formGroup .inputGroup{
+    width:70%;
+    text-align: center;
+    display: inline;
+    position: relative;
+}
+.inputGroup img{
+    right: 20px;
+    position: absolute;
+    top: 8px;
+}
+.inputGroup input[type="checkbox"]{
+    width: 30px;
+}
+.formGroup .inputGroup .formControl{
+          width: 100%;
+    padding: 5px;
+    border-radius: 1px;
+    border: 1px solid #41abe82b;
+}
+.DateTimeFields{
+    width:35%;
+}
+div.dateHolder .formGroup{
+    width:auto;
+
+}
+.DateTimeFields .formGroup .inputGroup .formControl{
+        width: 80%;
+    padding: 3px;
+    border-radius: 1px;
+    border: 1px solid #41abe82b;
+}
+.bTnot{
+    border-top-right-radius: 0px !important;
+        border-top-left-radius: 0px !important;
+}
